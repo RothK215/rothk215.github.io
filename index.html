@@ -1,28 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Roth's Web Assignment</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
   </head>
 
   <body>
-    <nav class="navbar">
-      <label class="logo"> Api Analysis </label>
-        <ul>
-          <li>
-          <a class="nav-links" href="#">Plots</a>
-          </li>
-          <li>
-            <a class="nav-links" href="#">Comparison</a>
-          </li>
-          <li>
-            <a class="nav-links" href="#">Data</a>
-          </li>
-        </ul>
-    </nav>
-
+    <div class="dropdwn">
+      <nav class="navbar">
+        <label class="logo" href="index.html"> Latitude Analysis </label>
+          <ul>
+            <li>
+              <a class="nav-links" href="#">Plots</a>
+                <ul>
+                  <li><a href="#">Max Temperature</a></li>
+                  <li><a href="#">Humidity</a></li>
+                  <li><a href="#">Cloudiness</a></li>
+                  <li><a href="#">Wind Speed</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-links" href="comparison.html">Comparison</a></li>
+            <li><a class="nav-links" href="data.html">Data</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="col-md-8" id="cubicle">
+        <h1>What is this?</h1>
+        <p> This site is in relation to the previous Python API module</p>
+      </div>
+      <div class="col-md-4"><p>What is this?</p></div>
+    </div>
   </body>
 </html>

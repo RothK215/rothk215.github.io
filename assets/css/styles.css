@@ -1,19 +1,13 @@
-* {
+#cubicle {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(190, 231, 218);
 }
-/*
-li, a {
-    font-weight: 500;
-    font-size: 16px;
-    color: rgb(253, 164, 231);
- 
-    text-decoration: none;
-}
-*/
 
+body {
+    background-color: black;
+}
 /* Navigation Bar Elements */
 nav.navbar {
     list-style: none;
@@ -27,19 +21,18 @@ nav.navbar {
 label.logo {
     font-size: 30px;
     background: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
-/*
-a.nav-links {
-    list-style: none;
-    background-color: black;
+label.logo:hover {
+    cursor: pointer;
+    color: white;
 }
-*/
-/**/
+
 /* Navbar List Placement */
 nav ul {
     float: right;
     margin-right: 20px;
+    margin-top: 10px;
     background-color: rgb(102, 225, 178);
 }
 
@@ -57,7 +50,51 @@ a.nav-links {
     font-size: 25px;
     color: black;
 }
+a.nav-links:hover {
+    font-size: 25px;
+    color: white;
+}
 
-@media (max-width: 1000px) {
+/* Plots Dropdown */
+nav ul li a {
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(102, 225, 178);
+}
+
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul ul li {
+    list-style: none;
+    width: 258px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: black;
+}
+nav ul ul li a:hover {
+    color: white;
+}
+
+
+@media (max-width: 800px) {
 
 }
