@@ -1,12 +1,33 @@
-#cubicle {
+#sum-panel {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(190, 231, 218);
+}
+
+#vis-panel {
+    box-sizing: content-box;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(190, 231, 218);
+}
+
+#text-panel {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(190, 231, 218);
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
     background-color: rgb(190, 231, 218);
 }
 
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 /* Navigation Bar Elements */
 nav.navbar {
@@ -17,13 +38,14 @@ nav.navbar {
     border-color: black;
     border-style: double;
 }
-/* API Analysis Ele*/
-label.logo {
-    font-size: 30px;
+/* Latitude Analysis Ele*/
+label a {
+    font-size: 50px;
+    padding-left: 5px;
     background: none;
-    margin-top: 15px;
+    color: black;
 }
-label.logo:hover {
+label a:hover {
     cursor: pointer;
     color: white;
 }
@@ -58,7 +80,7 @@ a.nav-links:hover {
 /* Plots Dropdown */
 nav ul li a {
     display: block;
-    padding: 0 15px;
+    padding: 0px;
     color: white;
     text-decoration: none;
     line-height: 60px;
@@ -77,11 +99,12 @@ nav ul ul{
 
 nav ul li:hover > ul{
     display: block;
+    right: auto;
 }
 
 nav ul ul li {
     list-style: none;
-    width: 258px;
+    width: 190px;
     float: none;
     display: list-item;
     position: relative;
@@ -94,6 +117,49 @@ nav ul ul li a:hover {
     color: white;
 }
 
+/* Visualizations Container */
+#vis-fig {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+  
+#vis-fig > a img{
+    float: center;
+    border: 2px solid black;
+    width: 46%;
+    margin: 1.66%;
+}
+
+/* Comparison Images */
+#com-imgs {
+    background-color: rgb(190, 231, 218);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+#com-imgs > img {
+    float: center;
+    border: 2px solid rgb(255, 255, 255);
+    width: 46.5%;
+    margin: 1.66%;
+  }
+
+
+#viz {
+    text-align: center;
+}
+
+/* Text Positions */
+h1, p {
+    text-indent: 15px;
+}
+
+#summary {
+    text-indent: 15px;
+}
 
 @media (max-width: 800px) {
 
