@@ -98,6 +98,7 @@ nav ul ul{
 }
 
 nav ul li:hover > ul{
+    z-index: 5000;
     display: block;
     right: auto;
 }
@@ -152,15 +153,26 @@ nav ul ul li a:hover {
     text-align: center;
 }
 
-/* Text Positions */
-h1, p {
+/* Text Elements */
+h1 {
     text-indent: 15px;
+}
+
+p {
+    text-indent: 15px;
+    font-size: 15px;
+    font-size: large;
 }
 
 #summary {
     text-indent: 15px;
 }
 
-@media (max-width: 800px) {
-
+@media (max-width: 1000px) {
+    #com-imgs > img {
+        float: center;
+        border: 2px solid rgb(255, 255, 255);
+        width: 96.5%;
+        margin: 1.66%;
+      }
 }
